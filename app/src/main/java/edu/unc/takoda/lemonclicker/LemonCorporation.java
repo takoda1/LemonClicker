@@ -1,6 +1,8 @@
 package edu.unc.takoda.lemonclicker;
 
-public class LemonCorporation extends stand{
+import java.io.Serializable;
+
+public class LemonCorporation extends stand implements Serializable {
 	
 	//This is the 6th level
 	

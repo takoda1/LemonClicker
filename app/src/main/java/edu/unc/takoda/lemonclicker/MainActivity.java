@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buyClick(View v) {
-        //Intent buyIntent = new Intent(this, Buy);
+        Intent buyIntent = new Intent(this, BuyActivity.class);
+        buyIntent.putExtra("Lemon", mainLemon);
+        startActivity(buyIntent);
     }
 }

@@ -1,11 +1,13 @@
 package edu.unc.takoda.lemonclicker;
 
+import java.io.Serializable;
+
 /**
  * Created by takoda on 11/4/2017.
  */
 
 
-public class Lemon {
+public class Lemon implements Serializable{
     int numLemons;
     int lemPerClick;
     LemonStand lemStan;

@@ -1,6 +1,8 @@
 package edu.unc.takoda.lemonclicker;
 
-public class LemonFarm extends stand{
+import java.io.Serializable;
+
+public class LemonFarm extends stand implements Serializable {
 	
 	//This is the third level
 	

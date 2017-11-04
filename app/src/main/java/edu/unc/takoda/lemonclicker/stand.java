@@ -1,6 +1,8 @@
 package edu.unc.takoda.lemonclicker;
 
-public class stand {
+import java.io.Serializable;
+
+public class stand implements Serializable{
 	int numStands;
 	int lemPerSec;
 	int costForStand;
