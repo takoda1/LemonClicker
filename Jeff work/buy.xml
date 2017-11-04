@@ -13,7 +13,7 @@
         android:text="Buy Options"
         android:textSize="24"
         android:textColor="@color/colorAccent"
-        android:textStyle="1"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,7 +28,7 @@
         android:text="Lemon Stand"
         android:textColor="@color/colorPrimary"
         android:textSize="20"
-        android:textStyle="1"
+        android:textStyle="bold"
 
 
         tools:layout_editor_absoluteX="16dp"
@@ -40,7 +40,7 @@
         android:text="Cost:"
         android:textColor="@color/colorPrimary"
         android:textSize="15"
-        android:textStyle="1"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="117dp" />
 
@@ -50,7 +50,7 @@
         android:text="Amount:"
         android:textColor="@color/colorPrimary"
         android:textSize="15"
-        android:textStyle="1"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="138dp" />
 
@@ -70,7 +70,7 @@
         android:text="Lemon Orchard"
         android:textColor="@color/colorPrimary"
         android:textSize="20"
-        android:textStyle="1"
+        android:textStyle="bold"
 
 
         tools:layout_editor_absoluteX="229dp"
@@ -91,7 +91,7 @@
         android:text="Cost:"
         android:textColor="@color/colorPrimary"
         android:textSize="15"
-        android:textStyle="1"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="117dp" />
 
@@ -101,7 +101,7 @@
         android:text="Amount:"
         android:textColor="@color/colorPrimary"
         android:textSize="15"
-        android:textStyle="1"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="138dp" />
 

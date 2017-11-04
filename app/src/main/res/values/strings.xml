@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LemonClicker</string>
+    <color name="yellow">#FFFF99</color>
 </resources>
