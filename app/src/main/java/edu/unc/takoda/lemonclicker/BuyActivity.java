@@ -17,12 +17,16 @@ public class BuyActivity extends AppCompatActivity {
         mainLemon = (Lemon)i.getSerializableExtra("Lemon");
     }
 
-    public void LemonStand(View v) {
+    public void BuyStand(View v) {
 
     }
 
-    public void LemonOrchard(View v) {
+    public void BuyOrchard(View v) {
         //
+    }
+
+    public void BuyFarm(View v){
+
     }
 
 }
