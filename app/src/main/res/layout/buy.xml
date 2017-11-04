@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context="com.example.jeffm.lemonclicker.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Options"
+        android:textSize="24"
+        android:textColor="@color/colorAccent"
+        android:textStyle="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lemon Stand"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20"
+        android:textStyle="1"
+
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15"
+        android:textStyle="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15"
+        android:textStyle="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:onClick="LemonStand"
+        android:text="Buy"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="Lemon Orchard"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20"
+        android:textStyle="1"
+
+
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:onClick="LemonOrchard"
+        android:text="Buy"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15"
+        android:textStyle="1"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15"
+        android:textStyle="1"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+</android.support.constraint.ConstraintLayout>
