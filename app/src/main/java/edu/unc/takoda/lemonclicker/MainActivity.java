@@ -9,13 +9,16 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     public TextView scoreView;
     public static Lemon mainLemon;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mainLemon = new Lemon();
         scoreView = (TextView) findViewById(R.id.score);
+        Intent i = getIntent();
+        Lemon temp = (Lemon)i.getSerializableExtra("Lemon");
+        if(temp != null)
+            mainLemon = temp;
         new Thread(new Runnable(){
             @Override
             public void run(){
@@ -27,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     mainLemon.secondPassed();
+                    scoreView.post(new Runnable(){
+                        public void run(){
+                            scoreView.setText(""+mainLemon.numLemons);
+                        }
+                    });
                 }
             }
         }).start();
@@ -35,12 +43,16 @@ public class MainActivity extends AppCompatActivity {
     public void lemonClick(View v){
         mainLemon.clickLemon();
 
-        scoreView.setText(String.valueOf(mainLemon.numLemons));
+        updateLemonCount();
     }
 
     public void buyClick(View v) {
         Intent buyIntent = new Intent(this, BuyActivity.class);
         buyIntent.putExtra("Lemon", mainLemon);
         startActivity(buyIntent);
+    }
+
+    private void updateLemonCount(){
+        scoreView.setText(String.valueOf(mainLemon.numLemons));
     }
 }

@@ -30,6 +30,7 @@ public class Lemon implements Serializable{
 
     public void secondPassed() {
         lemStan.secPassed(this);
+        orchStan.secPassed(this);
     }
 
     //////////////////////////////////////////////

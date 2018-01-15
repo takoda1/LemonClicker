@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:background="@color/yellow"
+    android:columnCount="2"
+    android:rowCount="2"
     tools:context="edu.unc.takoda.lemonclicker.BuyActivity">
 
-    <LinearLayout
-        android:layout_width="191dp"
-        android:layout_height="491dp"
-        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Options"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Buy Options"
-            android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.032"
-            android:layout_marginBottom="25dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:text="Back"
+        android:onClick="backClick"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_gravity="center_horizontal">
+
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,31 +49,25 @@
             android:text="Lemon Stand"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
-            android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="83dp" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/costLemonStand"
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/numLemonStand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Amount:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:textStyle="bold"/>
 
 
         <Button
@@ -67,8 +76,6 @@
             android:layout_height="wrap_content"
             android:onClick="BuyStand"
             android:text="Buy"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="158dp"
             android:layout_marginBottom="16dp"/>
 
 
@@ -78,20 +85,14 @@
             android:text="Lemon Orchard"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
-            android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="83dp" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:onClick="BuyOrchard"
-            android:text="Buy"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="158dp" />
+            android:text="Buy" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -99,9 +100,7 @@
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -110,8 +109,6 @@
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="138dp"
             android:layout_marginBottom="16dp"/>
 
         <TextView
@@ -120,20 +117,14 @@
             android:text="Lemon Farm"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
-            android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="83dp" />
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:onClick="BuyFarm"
-            android:text="Buy"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="158dp" />
+            android:text="Buy"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -141,9 +132,7 @@
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -152,17 +141,19 @@
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="138dp"
             android:layout_marginBottom="16dp"/>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="191dp"
-        android:layout_height="491dp"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -170,12 +161,7 @@
             android:text="Lemon Startup"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
-            android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="83dp"
-            android:layout_marginTop="58dp"/>/>
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -183,9 +169,7 @@
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -193,9 +177,7 @@
             android:text="Amount:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:textStyle="bold" />
 
 
         <Button
@@ -204,9 +186,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:onClick="BuyStartUp"
-            android:text="Buy"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="158dp" />
+            android:text="Buy" />
 
 
         <TextView
@@ -216,19 +196,14 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="83dp" />
+ />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:onClick="BuyCorporation"
-            android:text="Buy"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="158dp" />
+            android:text="Buy"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -236,9 +211,7 @@
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -247,9 +220,7 @@
             android:text="Amount:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -257,20 +228,14 @@
             android:text="Lemon Company"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
-            android:textStyle="bold"
-
-
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="83dp" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:onClick="BuyCompany"
-            android:text="Buy"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="158dp" />
+            android:text="Buy" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -278,9 +243,7 @@
             android:text="Cost:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="117dp" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -289,8 +252,7 @@
             android:text="Amount:"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="138dp" />
+            android:textStyle="bold" />
 
     </LinearLayout>
+</GridLayout>
